@@ -1,2 +1,12 @@
 csv_data
 .env
+env
+.gitignore
+*.pyc
+__pycache__/
+*.vsidx
+*.db-shm
+*.CodeChunks.db
+CopilotIndices/
+copilot-chat/
+v17/
