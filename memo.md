@@ -5,8 +5,11 @@
 ディレクトリを移動
 
 ```bash
-cd venv/Scripts
+cd Venv/Scripts
 ```
+
+## アクティブ可能にする
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 仮想環境をアクティブにする
 
