@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>home</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://unpkg.com/primevue/umd/primevue.min.js"></script>
+    <script src="https://unpkg.com/primevue@4/umd/primevue.min.js"></script>
     <script src="https://unpkg.com/@primevue/themes/umd/aura.min.js"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     {% load static %}
     <link rel="stylesheet" href="{% static 'home_screen/css/home_style.css' %}">
 </head>
@@ -19,14 +20,10 @@
     <ul>
         <li><a href="/flatTestMaker/settings/" class="hover-link" data-materials="{{ flat_test_texts|join:', ' }}">Flat Test Maker Settings</a></li>
         <li><a href="/structuredTest/settings/" class="hover-link" data-materials="{{ structured_test_texts|join:', ' }}">Structured Test Settings</a></li>
-        <li><a href="/login">Login</a></li>
     </ul>
-    <form action="report/" method="get">
-        <button type="submit">
-            <img src="{% static 'home_screen/images/issue.png' %}" alt="報告">
-        </button>
-    </form>
-    <div id="tooltip" class="tooltip"></div>
+    <div id="speeddial">
+        <p-speeddial :model="items" :radius="100" type="quarter-circle" direction="up-left" tooltipOptions="{ position: 'left', event: 'hover' }" />
+    </div>
     <script src="{% static 'home_screen/js/vue_home_screen_scripts.js' %}" type="module"></script>
 </body>
 </html>
