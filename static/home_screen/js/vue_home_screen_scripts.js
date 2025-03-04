@@ -1,36 +1,31 @@
 const { createApp } = Vue;
 
-const app1 = createApp({
-    // setup() {
-    //     document.querySelector(".hideBeforeVue").classList.remove("hideBeforeVue");
-    // },
+const links = createApp({
     data() {
         return {
-            sample: "a"
         }
-    },
-    compilerOptions: {
-        delimiters: ['[[', ']]'],
     },
 });
 
-app1.use(PrimeVue.Config, {
+links.use(PrimeVue.Config, {
     theme: {
         preset: PrimeVue.Themes.Aura,
     },
 });
-app1.component('p-datepicker', PrimeVue.DatePicker);
-app1.mount('#app1');
+links.component('p-card', PrimeVue.Card);
+links.component('p-divider', PrimeVue.Divider);
+links.component('p-button', PrimeVue.Button);
+links.mount('#links');
 
 const speeddial = createApp({
     data() {
         return {
             items: [
                 {
-                    label: 'home',
-                    icon: 'pi pi-home',
+                    label: 'report',
+                    icon: 'pi pi-envelope',
                     command: () => {
-                        window.location.href = '/home';
+                        window.location.href = 'report';
                     }
                 },
                 {
@@ -41,10 +36,10 @@ const speeddial = createApp({
                     }
                 },
                 {
-                    label: 'report',
-                    icon: 'pi pi-envelope',
+                    label: 'home',
+                    icon: 'pi pi-home',
                     command: () => {
-                        window.location.href = 'report';
+                        window.location.href = '/home';
                     }
                 },
             ]

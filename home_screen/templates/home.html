@@ -13,16 +13,55 @@
 </head>
 <body>
     <h1>Home</h1>
-    <div id="app1">
-        <p-datepicker v-model="sample"></p-datepicker>
-        [[ sample ]]
+    <div id="links">
+        <p-card style="width: 85vh;" :pt="{
+            footer: { style: 'padding: 20px 0px;' }
+        }">
+            <template #title>from 単語帳</template>
+            <template #subtitle>
+                システム英単語やターゲット1900などから問題を作成します
+            </template>
+            <template #content>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                    quas!
+                </p>
+            </template>
+            <template #footer >
+                <p-button as="a" href="/flatTestMaker/settings/" label="作成" icon="pi pi-arrow-up-right" iconPos="right" variant="outlined" raised rounded style="text-decoration:none;" :pt="{
+                    root: { style: 'padding: 0.5em 1em; font-size: 150%; gap: 1em' },
+                    icon: {style: 'font-size: 100%;'},
+                }" />
+            </template>
+        </p-card>
+        <p-divider layout="vertical" :pt="{
+            content: { style: 'background-color: #f8fafc;' }
+        }">
+            <b>OR</b>
+        </p-divider>
+        <p-card style="width: 85vh" :pt="{
+            footer: { style: 'padding: 20px 0px;' }
+        }">
+            <template #title>from 教科書</template>
+            <template #subtitle>
+                Here We Go! 1やHere We Go! 2などから問題を作成します
+            </template>
+            <template #content>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                    quas!
+                </p>
+            </template>
+            <template #footer>
+                <p-button as="a" href="/structuredTest/settings/" label="作成" icon="pi pi-arrow-up-right" iconPos="right" variant="outlined" raised rounded style="text-decoration:none;" :pt="{
+                    root: { style: 'padding: 0.5em 1em; font-size: 150%; gap: 1em' },
+                    icon: {style: 'font-size: 100%;'},
+                }" />
+            </template>
+        </p-card>
     </div>
-    <ul>
-        <li><a href="/flatTestMaker/settings/" class="hover-link" data-materials="{{ flat_test_texts|join:', ' }}">Flat Test Maker Settings</a></li>
-        <li><a href="/structuredTest/settings/" class="hover-link" data-materials="{{ structured_test_texts|join:', ' }}">Structured Test Settings</a></li>
-    </ul>
     <div id="speeddial">
-        <p-speeddial :model="items" :radius="100" type="quarter-circle" direction="up-left" tooltipOptions="{ position: 'left', event: 'hover' }" />
+        <p-speeddial :model="items" :radius="100" type="quarter-circle" direction="down-left" tooltipOptions="{ position: 'left', event: 'hover' }" />
     </div>
     <script src="{% static 'home_screen/js/vue_home_screen_scripts.js' %}" type="module"></script>
 </body>

@@ -58,3 +58,5 @@ pip freeze > requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
+## サーバー起動
+python manage.py runserver
