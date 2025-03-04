@@ -5,8 +5,11 @@
 ディレクトリを移動
 
 ```bash
-cd venv/Scripts
+cd Venv/Scripts
 ```
+
+## アクティブ可能にする
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 仮想環境をアクティブにする
 
@@ -55,3 +58,5 @@ pip freeze > requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
+## サーバー起動
+python manage.py runserver
