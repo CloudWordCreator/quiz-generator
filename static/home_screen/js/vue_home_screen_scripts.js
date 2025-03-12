@@ -13,6 +13,7 @@ links.use(PrimeVue.Config, {
     },
 });
 links.component('p-card', PrimeVue.Card);
+links.component('p-scrollpanel', PrimeVue.ScrollPanel);
 links.component('p-divider', PrimeVue.Divider);
 links.component('p-button', PrimeVue.Button);
 links.mount('#links');
