@@ -1,8 +1,6 @@
-/* static/authentication/css/login_style.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f8fafc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,19 +8,13 @@ body {
     margin: 0;
 }
 
-/* login-containerは少し修正が必要かも */
 .login-container {
     background-color: #fff;
-    padding: 50px;
+    padding: 10vh;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 75vh;
     text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
-    color: #333;
 }
 
 .form-group {
@@ -50,7 +42,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     display: block;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .login-container button:hover {
@@ -66,4 +58,10 @@ body {
 
 .login-container a:hover {
     text-decoration: underline;
+}
+
+#speeddial{
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
 }
