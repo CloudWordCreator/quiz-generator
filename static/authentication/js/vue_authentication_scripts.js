@@ -8,7 +8,7 @@ const speeddial = createApp({
                     label: 'report',
                     icon: 'pi pi-envelope',
                     command: () => {
-                        window.location.href = 'report';
+                        window.location.href = '/home/report';
                     }
                 },
                 {
