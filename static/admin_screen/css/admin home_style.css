@@ -1,50 +1,41 @@
-/* static/admin_screen/css/admin home_style.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
-
-.searchForm {
+    background-color: #f8fafc;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.searchForm input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-.searchForm button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.searchForm button:hover {
-    background-color: #0056b3;
+.admin-home-container {
+    background-color: #fff;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
 }
 
 .csvForm {
+    margin-bottom: 30px;
     text-align: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
 }
 
 .csvForm a {
-    padding: 10px 20px;
+    width: 90%;
+    padding: 10px 10px;
     background-color: #28a745;
-    color: #fff;
-    text-decoration: none;
+    border: none;
     border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .csvForm a:hover {
@@ -57,17 +48,13 @@ body {
 }
 
 .unit-text, .nounit-text {
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 45%;
 }
 
-.unit-text p, .nounit-text p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.unit-text h2, .nounit-text h2 {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .text-item {
@@ -76,6 +63,10 @@ body {
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
+}
+
+ul {
+    padding-left: 1.5rem
 }
 
 .text-item span {
@@ -118,4 +109,10 @@ body {
     width: 20px; /* Adjust the width as needed */
     height: 20px; /* Adjust the height as needed */
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* black color */
+}
+
+#speeddial{
+    position: fixed;
+    top: 5vh;
+    right: 5vh;
 }
