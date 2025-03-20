@@ -24,11 +24,11 @@
                             <span>{{ text.name }}</span>
                             <!-- 編集ボタン -->
                             <button id='edit-{{ text.id }}' class="edit-button" onclick="location.href='{% url 'edit_text' %}?text-id={{ text.id }}'">
-                                <img src="{% static 'admin_screen/images/edit.png' %}" alt="編集">
+                                <i class="pi pi-pen-to-square" style="font-size: 1.5em;"></i>
                             </button>
                             <!-- 削除ボタン -->
                             <button id='delete-{{ text.id }}' class="delete-button" onclick="location.href='{% url 'delete_text' %}?text_id={{ text.id }}'">
-                                <img src="{% static 'admin_screen/images/delete.png' %}" alt="削除">
+                                <i class="pi pi-trash" style="font-size: 1.5em;"></i>
                             </button>
                         </li>
                     {% endfor %}
@@ -43,11 +43,11 @@
                             <span>{{ text.name }}</span>
                             <!-- 編集ボタン -->
                             <button id='edit-{{ text.id }}' class="edit-button" onclick="location.href='{% url 'edit_text' %}?text-id={{ text.id }}'">
-                                <img src="{% static 'admin_screen/images/edit.png' %}" alt="編集">
+                                <i class="pi pi-pen-to-square" style="font-size: 1.5em;"></i>
                             </button>
                             <!-- 削除ボタン -->
                             <button id='delete-{{ text.id }}' class="delete-button" onclick="location.href='{% url 'delete_text' %}?text_id={{ text.id }}'">
-                                <img src="{% static 'admin_screen/images/delete.png' %}" alt="削除">
+                                <i class="pi pi-trash" style="font-size: 1.5em;"></i>
                             </button>
                         </li>
                     {% endfor %}
@@ -57,7 +57,7 @@
         <div class="csvForm">
             <a href="{% url 'upload_csv' %}" target="_blank" rel="noopener">
                 教材をアップロードして追加
-                <i class="pi pi-file-arrow-up" style="font-size: 1em; padding-left:1em;"></i>
+                <i class="pi pi-upload" style="font-size: 1em; padding-left:1em;"></i>
             </a>
         </div>
     </div>
